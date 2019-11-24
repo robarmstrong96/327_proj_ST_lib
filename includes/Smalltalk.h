@@ -27,7 +27,7 @@ public:
 	// This transaction simulates giving away a watch
 	std::unique_ptr<Watch>  takeWatch();
 
-	//if already have a watch then return false and dont change pWatch pointer
+	//if already have a watch then return false and don't change pWatch pointer
 	//otherwise accept watch (return true) and set this->pWatch=pWatch (use std::move)
 	bool giveWatch(std::unique_ptr<Watch> &pWatch);
 
